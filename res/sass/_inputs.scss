@@ -1,0 +1,35 @@
+.select-container select
+{
+    appearance: none;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+}
+
+select
+{
+	padding: 10px 20px;
+	margin: 20px 0;
+	color: #9AA0A5;
+	border: 2px solid #CDD1D4;
+	font-size: 16px;
+	background: url("/IBM-FED-Exercise/res/graphics/select-arrow.png") no-repeat right;
+	background-position: 95%; 
+	-webkit-appearance: none;
+	overflow: hidden;
+	
+	&:hover
+	{
+		cursor: pointer;
+		border: 2px solid map-get($autosalesColorTheme, primary);
+		background: url("/IBM-FED-Exercise/res/graphics/select-arrow-hover.png") no-repeat right;
+		background-position: 95%; 
+	}
+}
+
+option
+{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+}
+	

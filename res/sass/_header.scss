@@ -1,0 +1,54 @@
+/* nav */
+/* hero */
+
+
+
+
+/* nav */
+nav
+{
+	height: 50px;
+	background: #3D4852;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+
+.navbar-nav
+{
+	float: right;
+}
+
+.brand
+{
+	padding: 0 0 0 25px;
+}
+
+.brand > img
+{
+	display: inline-block;
+}
+
+.nav > li > a:hover,
+.nav > li > a:visited
+{
+	background: map-get($autosalesColorThemeBright, primary);
+}
+
+
+/* hero */
+.hero
+{
+	background-image: url("/IBM-FED-Exercise/res/graphics/hero-bg.png");
+	background-position: center center;
+	min-height: 500px;
+	
+	&::before
+	{
+		background: $colorHeroBg;
+	}
+}
+
+.hero-inner
+{
+	min-height: 500px;
+}

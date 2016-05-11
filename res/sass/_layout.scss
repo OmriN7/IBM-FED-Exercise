@@ -1,0 +1,112 @@
+/* car-showcase */
+/* car-search */
+/* overlay */
+
+
+
+
+
+/* car-showcase */
+
+.car-showcase
+{
+	padding: 40px 0;
+	&:nth-child(even) { background: #F0F2F3; }
+	&:nth-child(odd) { background: $colorWhite; }
+}
+
+	.car-showcase__text__header
+	{
+width: 85%;
+	}
+	
+.car-showcase__text
+{
+	padding: 10px 0;
+}
+
+.car-showcase__text-inner
+{
+	width: 90%;
+}
+
+.car-showcase__text__description
+{
+	line-height: 1.6;
+	word-spacing: 3px;
+	margin: 15px 0;
+}
+
+.car-showcase__images
+{
+	padding: 0;
+}
+
+.car-showcase__images__image-container
+{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.car-showcase__image,
+.car-showcase__image-inner
+{
+	height: 280px;
+	width: 280px;
+}
+
+.car-showcase__image
+{
+	display: inline-block;
+	margin: 0 8px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+}
+
+
+/* car-search */
+.car-search
+{
+	padding: 28px 0;
+}
+
+.car-search__element
+{
+	padding-right: 10px;
+	padding-left: 10px;
+	
+	&:first-child { margin-left: -10px; }
+	&:last-child  { margin-right: -10px; }
+}
+
+.car-search__element > select,
+.car-search__element > a,
+{
+	height: 45px !important;
+}
+
+
+/* overlay */
+.overlay-text
+{
+	position: absolute;
+	opacity: 0;
+	color: white;
+	transition: 0.1s;
+}
+
+
+.overlay:hover .overlay-text
+{
+	opacity: 1;
+	background-color: rgba(62,72,82,0.8);
+}
+	
+.overlay-text__header
+{
+	font-size: 26px;
+	border-bottom: 2px solid white;
+	padding: 15px 45px;
+	margin-top: 0;
+}
+	

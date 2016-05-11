@@ -1,0 +1,77 @@
+.button
+{
+	font-size: 16px;
+	padding: 12px 30px;
+	border: 0;
+	margin: 20px 0;
+	display: inline-table;
+}
+
+.btn--lg
+{
+	font-size: 20px;
+	padding: 15px 60px;
+}
+
+
+
+@each $profile, $bgColor in $autosalesColorTheme 
+{
+	.btn-flavor-#{$profile}
+	{
+		transition: background 0.1s;
+		-webkit-transition: background 0.1s;
+		
+		background: $bgColor;
+	}
+}
+
+@each $profile, $bgColor in $autosalesColorThemeBright 
+{
+	.btn-flavor-#{$profile}
+	{
+		&:hover
+		{
+			background: $bgColor;
+		}
+	}
+}
+
+
+/*
+
+.btn-flavor-secondary,
+.btn-flavor-tertiary,
+.btn-flavor-quaternary
+{
+	transition: background 0.1s;
+	-webkit-transition: background 0.1s;
+}
+
+.btn-flavor-secondary
+{
+	background: $colorFlavorSecondary;
+	&:hover
+	{
+		background: $colorFlavorSecondaryBright;
+	}
+}
+
+.btn-flavor-tertiary
+{
+	background: $colorFlavorTertiary;
+	&:hover
+	{
+		background: $colorFlavorTertiaryBright;
+	}
+}
+
+.btn-flavor-quaternary
+{
+	background: $colorFlavorQuaternary;
+	&:hover
+	{
+		background: $colorFlavorQuaternaryBright;
+	}
+}
+*/

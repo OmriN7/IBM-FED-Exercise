@@ -1,0 +1,33 @@
+p
+{
+	font-size: 18px;
+}
+
+h2, .h2 { font-size: 54px; }
+h4, .h4 { font-size: 30px; }
+
+
+.text-bold
+{
+	font-weight: bold;
+}
+
+.text-white
+{
+	color: $colorWhite !important;
+}
+
+
+@each $profile, $colorFlavor in $autosalesColorTheme 
+{
+	.text-flavor-#{$profile}
+	{
+		color: $colorFlavor;
+	}
+}
+
+
+/*
+.text-flavor-primary { color: $colorFlavorPrimary; }
+.text-flavor-primary-bright { color: $colorFlavorPrimaryBright; }
+*/

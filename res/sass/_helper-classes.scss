@@ -1,0 +1,30 @@
+.div-fill
+{	
+	width: 100%;
+	height: 100%;
+}
+
+.anchor-no-dec,
+.anchor-no-dec:hover,
+.anchor-no-dec:visited,
+.anchor-no-dec:link,
+.anchor-no-dec:active
+{
+	text-decoration: none;
+}
+
+.flexbox
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.flexbox-center--horz
+{
+	align-items: center;
+}
+
+.flexbox-center--vert
+{
+	justify-content: center;
+}
