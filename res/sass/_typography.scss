@@ -27,6 +27,15 @@ h4, .h4 { font-size: 30px; }
 }
 
 
+@each $profile, $colorFlavor in $autosalesColorThemeBright 
+{
+	.text-flavor-#{$profile}-bright
+	{
+		color: $colorFlavor;
+	}
+}
+
+
 /*
 .text-flavor-primary { color: $colorFlavorPrimary; }
 .text-flavor-primary-bright { color: $colorFlavorPrimaryBright; }

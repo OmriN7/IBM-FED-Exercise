@@ -5,7 +5,7 @@
 		<!---------------------------------------------->
 		<meta charset="utf-8">
 		<meta name="Description" CONTENT="An example website created for a coding exercise.">
-		<title>AutoSales.Com</title>
+		<title>AutoSales.com</title>
 		<link rel="icon" href="/IBM-FED-Exercise/res/graphics/logo0.png"> 
 		
 		<!-- OPEN GRAPH METATAGS -->
@@ -15,54 +15,40 @@
 		<meta property="og:image" content="/IBM-FED-Exercise/res/graphics/og-thumbnail.jpg">
 
 		
-		<!-- LIBRARIES -->
-		<!---------------------------------------------->
-		
-		<!-- BOOTSTRAP CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	
-		<!-- AWESOMEFONT CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-		
-		
-		<!-- STYLESHEETS -->
+		<!-- STYLESHEET -->
 		<!---------------------------------------------->
 
 		<!-- Autosales.com STYLESHEET -->
+		<!-- BOOTSTRAP CSS -->
 		<link rel="stylesheet" href="/IBM-FED-Exercise/res/css/style.css">
-		
 		
 		
 	</head>
 	<body>
-	
 		<!-- NAVBAR -->
 		<header>
-			<nav>
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="brand" href="#">
-							<img src="/IBM-FED-Exercise/res/graphics/logo0.png" alt="AutoSales.com's Logo">
-							<img src="/IBM-FED-Exercise/res/graphics/logo1.png" alt="AutoSales.com's Logo">
-						</a>
-					</div>
-					<ul class="nav navbar-nav">
-						<li class="text-white"><a href="#">Cars for Sale</a></li> 
-						<li class="text-white"><a href="#">Sell My Car</a></li>
-						<li class="text-white"><a href="#">Find a Dealer</a></li>
-						<li class="text-white"><a href="#">Contact Us</a></li>
-						<li class="text-white"><a href="#"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a></li>
-					</ul>
+			<nav class="container-fluid">
+				<div class="navbar-header">
+					<a class="brand" href="#">
+						<img src="/IBM-FED-Exercise/res/graphics/logo0.png" alt="AutoSales.com's Logo">
+						<img src="/IBM-FED-Exercise/res/graphics/logo1.png" alt="AutoSales.com's Logo">
+					</a>
 				</div>
+				<ul class="nav navbar-nav">
+					<li class="text-white"><a href="#">Cars for Sale</a></li> 
+					<li class="text-white"><a href="#">Sell My Car</a></li>
+					<li class="text-white"><a href="#">Find a Dealer</a></li>
+					<li class="text-white"><a href="#">Contact Us</a></li>
+					<li class="text-white"><input class="search-input" type="search"></input></li>
+				</ul>
 			</nav>
 		</header>
-		
 		
 		<!-- HERO -->
 		<section class="hero">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-7 hero-inner flexbox flexbox-center--vert">
+					<div class="col-xs-11 col-sm-9 col-md-7 hero-inner flexbox flexbox-center--vert">
 						<h2 class="text-bold text-flavor-primary">The Car of Your Dreams is Only a Click Away!</h2>
 						<a class="button anchor-no-dec btn--lg btn-flavor-quaternary text-white text-bold" href="#">Get Started Now</a>
 					</div>
@@ -72,42 +58,45 @@
 		
 		<!-- CAR-SEARCH -->
 		<section class="car-search">
-			<div class="container">
+			<form class="container">
 				<div class="row">
-					<div class="col-md-3 car-search__element select-container">
-						<select class="text-bold div-fill" name="carlist" form="carform">
-							<option value="null" selected>Make</option>
-							<option value="1997">1997</option>
-							<option value="1999">1999</option>
-						</select>
-					</div>
-					<div class="col-md-3 car-search__element select-container">
-						<select class="text-bold div-fill" name="carlist" form="carform">
-							<option value="null" selected>Model</option>
-							<option value="arnold">T-800</option>
-							<option value="robert">T-1000</option>
-						</select>
-					</div>
-					<div class="col-md-3 car-search__element select-container">
-						<select class="text-bold div-fill" name="carlist" form="carform">
-							<option value="null"  selected>Price</option>
-							<option value="expensive">Loadsemone</option>
-							<option value="cheap">Cheap</option>
-						</select>
-					</div>
-					<div class="col-md-3 car-search__element">
-						<a class="button anchor-no-dec anchor-no-dec btn-flavor-tertiary text-bold div-fill text-center text-white" href="#">Find My Dream Car</a>
-					</div>
+				<div class="col-md-3 car-search__element select-container">
+					<select class="text-bold div-fill" name="carlist" form="carform">
+						<option value="null" selected>Make</option>
+						<option value="1997">1997</option>
+						<option value="1999">1999</option>
+					</select>
 				</div>
-			</div>
+				<div class="col-md-3 car-search__element select-container">
+					<select class="text-bold div-fill" name="carlist" form="carform">
+						<option value="null" selected>Model</option>
+						<option value="arnold">T-800</option>
+						<option value="robert">T-1000</option>
+					</select>
+				</div>
+				<div class="col-md-3 car-search__element select-container">
+					<select class="text-bold div-fill" name="carlist" form="carform">
+						<option value="null"  selected>Price</option>
+						<option value="expensive">Loadsemone</option>
+						<option value="cheap">Cheap</option>
+					</select>
+				</div>
+				<div class="col-md-3 car-search__element">
+					<button class="button anchor-no-dec anchor-no-dec btn-flavor-tertiary text-bold div-fill text-center text-white">Find My Dream Car</button>
+				</div>
+				</div>
+			</form>
 		</section>
 		
 		
 		<!-- CAR-SHOWCASE 0 - HONDA -->
 		<section class="car-showcase">
+		
 			<div class="container">
+			
 				<div class="row">
-					<div class="col-md-6 car-showcase__text">
+					<!-- TEXT -->
+					<div class=" col-md-6 col-lg-6 car-showcase__text">
 						<div class="pull-left car-showcase__text-inner">
 							<h1 class="text-flavor-primary text-bold h4">Honda Cars and SUVs</h1>
 							<p class="car-showcase__text__description text-flavor-primary ">
@@ -117,8 +106,9 @@
 							<a class="button anchor-no-dec btn-flavor-secondary text-bold text-white" href="#">View All</a>
 						</div>
 					</div>
-					
-					<div class="col-md-6 car-showcase__images">
+						
+					<!-- FIGURES -->
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 car-showcase__images">
 						<figure class="car-showcase__image overlay">
 							<a href="#">
 								<figcaption class="overlay-text">
@@ -132,7 +122,9 @@
 								<img class="overlay-image" src="/IBM-FED-Exercise/res/graphics/honda0.png" alt="Honda Civic"/>	
 							</a>
 						</figure>
-						
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 car-showcase__images">
 						<figure class="car-showcase__image overlay">
 							<a href="#">
 								<figcaption class="overlay-text">
@@ -147,17 +139,20 @@
 							</a>
 						</figure>
 					</div>
-				
 				</div>
+				
 			</div>
 		</section>
+		
 		
 		<!-- CAR-SHOWCASE 1 - AUDI -->
 		<section class="car-showcase">
 			<div class="container">
+			
 				<div class="row">
-					
-					<div class="col-md-6 car-showcase__images">
+				
+					<!-- FIGURES -->
+					<div class="col-xs-12 col-sm-6 col-lg-3 car-showcase__images">
 						<figure class="car-showcase__image overlay">
 							<a href="#">
 								<figcaption class="overlay-text">
@@ -171,7 +166,9 @@
 								<img class="overlay-image" src="/IBM-FED-Exercise/res/graphics/audi0.png" alt="Audi Car"/>	
 							</a>
 						</figure>
-						
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 col-lg-3 car-showcase__images">
 						<figure class="car-showcase__image overlay">
 							<a href="#">
 								<figcaption class="overlay-text">
@@ -186,11 +183,12 @@
 							</a>
 						</figure>
 					</div>
-				
-					<div class="col-md-6 car-showcase__text">
+					
+					<!-- TEXT -->
+					<div class="col-lg-6 car-showcase__text">
 						<div class="pull-right car-showcase__text-inner">
 							<h1 class="text-flavor-primary text-bold h4">Audi Cars and SUVs</h1>
-							<p class="car-showcase__text__description text-flavor-primary">
+							<p class="car-showcase__text__description text-flavor-primary ">
 								Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette 
 								tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
 							</p>
@@ -198,25 +196,31 @@
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</section>
 		
+		
 		<!-- CAR-SHOWCASE 2 - CHEVY -->
 		<section class="car-showcase">
+		
 			<div class="container">
+			
 				<div class="row">
-					<div class="col-md-6 car-showcase__text">
+					<!-- TEXT -->
+					<div class="col-lg-6 car-showcase__text">
 						<div class="pull-left car-showcase__text-inner">
 							<h1 class="text-flavor-primary text-bold h4">Chevy Cars and SUVs</h1>
 							<p class="car-showcase__text__description text-flavor-primary ">
 								Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette 
 								tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
 							</p>
-							<a class="button anchor-no-dec  btn-flavor-secondary text-bold text-white" href="#">View All</a>
+							<a class="button anchor-no-dec btn-flavor-secondary text-bold text-white" href="#">View All</a>
 						</div>
 					</div>
-					
-					<div class="col-md-6 car-showcase__images">
+						
+					<!-- FIGURES -->
+					<div class="col-xs-12 col-sm-6 col-lg-3 car-showcase__images">
 						<figure class="car-showcase__image overlay">
 							<a href="#">
 								<figcaption class="overlay-text">
@@ -230,7 +234,9 @@
 								<img class="overlay-image" src="/IBM-FED-Exercise/res/graphics/chevy0.png" alt="Chevy Car"/>	
 							</a>
 						</figure>
-						
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 col-lg-3 car-showcase__images">
 						<figure class="car-showcase__image overlay">
 							<a href="#">
 								<figcaption class="overlay-text">
@@ -245,17 +251,20 @@
 							</a>
 						</figure>
 					</div>
-				
 				</div>
+				
 			</div>
 		</section>
 		
-		<!-- CAR-SHOWCASE 3 - FORD-->
+	
+		<!-- CAR-SHOWCASE 3 - FORD -->
 		<section class="car-showcase">
 			<div class="container">
+			
 				<div class="row">
-					
-					<div class="col-md-6 car-showcase__images">
+				
+					<!-- FIGURES -->
+					<div class="col-xs-12 col-sm-6 col-lg-3 car-showcase__images">
 						<figure class="car-showcase__image overlay">
 							<a href="#">
 								<figcaption class="overlay-text">
@@ -269,7 +278,9 @@
 								<img class="overlay-image" src="/IBM-FED-Exercise/res/graphics/ford0.png" alt="Ford Car"/>	
 							</a>
 						</figure>
-						
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 col-lg-3 car-showcase__images">
 						<figure class="car-showcase__image overlay">
 							<a href="#">
 								<figcaption class="overlay-text">
@@ -284,21 +295,25 @@
 							</a>
 						</figure>
 					</div>
-				
-					<div class="col-md-6 car-showcase__text">
+					
+					<!-- TEXT -->
+					<div class="col-lg-6 car-showcase__text">
 						<div class="pull-right car-showcase__text-inner">
-							<h1 class="text-flavor-primary text-bold h4">Ford Cars and SUVs</h1>
-							<p class="car-showcase__text__description text-flavor-primary">
+							<h1 class="text-flavor-primary text-bold h4">Audi Cars and SUVs</h1>
+							<p class="car-showcase__text__description text-flavor-primary ">
 								Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette 
 								tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
 							</p>
-							<a class="button anchor-no-dec  btn-flavor-secondary text-bold text-white" href="#">View All</a>
+							<a class="button anchor-no-dec btn-flavor-secondary text-bold text-white" href="#">View All</a>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</section>
 		
+		
+		<!-- FOOTER -->
 		<footer>
 			<div class="website-footer">
 				<a class="brand" href="#">
